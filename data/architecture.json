@@ -1,0 +1,35 @@
+{
+  "flow": [
+    {
+      "step": 1,
+      "title": "Deposit underlying",
+      "subtitle": "Capital inflow",
+      "description": "You send the underlying asset (e.g. USD, ETH) via the Gateway. Funds are received and accounted before any allocation."
+    },
+    {
+      "step": 2,
+      "title": "Receive yoToken",
+      "subtitle": "Vault shares",
+      "description": "You receive vault shares (yoUSD, yoETH, etc.) representing your share of the vault. Your token balance does not rebase."
+    },
+    {
+      "step": 3,
+      "title": "Vault allocates into strategies",
+      "subtitle": "Asset allocation",
+      "description": "The vault routes capital into whitelisted strategies according to configured weights and caps. Each strategy deploys to external yield sources (lending, LP, etc.)."
+    },
+    {
+      "step": 4,
+      "title": "Yield increases exchange rate",
+      "subtitle": "Value accrual",
+      "description": "As strategies earn yield, the vault’s total underlying value grows. The share price (exchange rate) goes up, so each yoToken is worth more underlying over time."
+    },
+    {
+      "step": 5,
+      "title": "Redeem later for more underlying",
+      "subtitle": "Exit",
+      "description": "When you redeem, you burn yoTokens and receive underlying. Because the exchange rate has grown, you get back more than you deposited (minus fees and any losses)."
+    }
+  ],
+  "exchangeRateNote": "Exchange rate = total underlying value ÷ total supply of yoTokens. Yield shows up in the rate, not in token quantity. Your balance stays constant; your claim on underlying grows."
+}

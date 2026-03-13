@@ -1,0 +1,62 @@
+[
+  {
+    "id": "yousd",
+    "ticker": "yoUSD",
+    "underlying": "USD",
+    "exposure": "Stablecoin lending strategies",
+    "chain": "Base",
+    "riskLevel": "Low",
+    "strategiesCount": 3,
+    "isInstantWithdraw": true,
+    "mechanism": "ERC-4626",
+    "apyMock": "4.2"
+  },
+  {
+    "id": "yoeth",
+    "ticker": "yoETH",
+    "underlying": "ETH",
+    "exposure": "ETH yield strategies",
+    "chain": "Base",
+    "riskLevel": "Med",
+    "strategiesCount": 2,
+    "isInstantWithdraw": false,
+    "mechanism": "ERC-4626",
+    "apyMock": "3.8"
+  },
+  {
+    "id": "yobtc",
+    "ticker": "yoBTC",
+    "underlying": "BTC",
+    "exposure": "BTC yield strategies",
+    "chain": "Base",
+    "riskLevel": "Med",
+    "strategiesCount": 2,
+    "isInstantWithdraw": false,
+    "mechanism": "ERC-4626",
+    "apyMock": "2.1"
+  },
+  {
+    "id": "yoeur",
+    "ticker": "yoEUR",
+    "underlying": "EUR",
+    "exposure": "Stablecoin (EUR) lending strategies",
+    "chain": "Base",
+    "riskLevel": "Low",
+    "strategiesCount": 2,
+    "isInstantWithdraw": true,
+    "mechanism": "ERC-4626",
+    "apyMock": "3.5"
+  },
+  {
+    "id": "yogold",
+    "ticker": "yoGOLD",
+    "underlying": "GOLD",
+    "exposure": "Tokenized gold / commodity strategies",
+    "chain": "Base",
+    "riskLevel": "High",
+    "strategiesCount": 1,
+    "isInstantWithdraw": false,
+    "mechanism": "ERC-4626",
+    "apyMock": "1.2"
+  }
+]

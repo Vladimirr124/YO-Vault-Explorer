@@ -1,0 +1,84 @@
+{
+  "contracts": [
+    {
+      "name": "yoGateway",
+      "group": "Core access",
+      "role": "Automated",
+      "description": "Entry point for deposits and withdrawals",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": "https://etherscan.io/address/",
+      "addressBase": "0x0000000000000000000000000000000000000001",
+      "addressMainnet": null
+    },
+    {
+      "name": "Vaults",
+      "group": "Core access",
+      "role": "Automated",
+      "description": "One per yoToken (yoUSD, yoETH, …); hold strategy allocations and account for exchange rate",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": null,
+      "addressBase": null,
+      "addressMainnet": null
+    },
+    {
+      "name": "Oracle",
+      "group": "Core access",
+      "role": "Automated",
+      "description": "Price feeds and exchange rate data",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": "https://etherscan.io/address/",
+      "addressBase": "0x0000000000000000000000000000000000000002",
+      "addressMainnet": null
+    },
+    {
+      "name": "AdminMultisig",
+      "group": "Governance and operations",
+      "role": "Governance",
+      "description": "Admin parameter and config updates",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": "https://etherscan.io/address/",
+      "addressBase": "0x0000000000000000000000000000000000000005",
+      "addressMainnet": null
+    },
+    {
+      "name": "OperatorMultisig",
+      "group": "Governance and operations",
+      "role": "Governance",
+      "description": "Strategy whitelist and operational actions",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": "https://etherscan.io/address/",
+      "addressBase": "0x0000000000000000000000000000000000000006",
+      "addressMainnet": null
+    },
+    {
+      "name": "Emergency Pauser",
+      "group": "Governance and operations",
+      "role": "Governance",
+      "description": "Can pause deposits and withdrawals in emergency",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": null,
+      "addressBase": null,
+      "addressMainnet": null
+    },
+    {
+      "name": "Redeemer",
+      "group": "User flow and automation",
+      "role": "Automated",
+      "description": "Handles redemption flow and queue",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": "https://etherscan.io/address/",
+      "addressBase": "0x0000000000000000000000000000000000000004",
+      "addressMainnet": null
+    },
+    {
+      "name": "Rewards Harvester",
+      "group": "User flow and automation",
+      "role": "Automated",
+      "description": "Harvests and compounds strategy rewards",
+      "baseExplorer": "https://basescan.org/address/",
+      "mainnetExplorer": "https://etherscan.io/address/",
+      "addressBase": "0x0000000000000000000000000000000000000003",
+      "addressMainnet": null
+    }
+  ]
+}

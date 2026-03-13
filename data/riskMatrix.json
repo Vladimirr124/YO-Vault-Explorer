@@ -1,0 +1,45 @@
+{
+  "categories": ["Smart Contract", "Protocol", "Chain", "Liquidity", "Strategy", "Bridging"],
+  "vaultRisks": {
+    "yousd": {
+      "Smart Contract": { "level": "Low", "why": "Audited vault and gateway with limited upgrade surface; standard ERC-4626 implementation." },
+      "Protocol": { "level": "Low", "why": "Mature underlying protocols and diversified strategies reduce single-protocol blow-up risk." },
+      "Chain": { "level": "Low", "why": "Base L2 with strong security assumptions and active monitoring." },
+      "Liquidity": { "level": "Low", "why": "Stablecoin pair depth is sufficient for normal-sized redemptions without heavy slippage." },
+      "Strategy": { "level": "Low", "why": "Vault capital is only routed into whitelisted strategies with per-strategy caps; operator-managed." },
+      "Bridging": { "level": "Med", "why": "USD exposure may involve bridge or fiat rails; redemption can be delayed during stress." }
+    },
+    "yoeth": {
+      "Smart Contract": { "level": "Low", "why": "Same ERC-4626 standard and audit posture as other yoTokens." },
+      "Protocol": { "level": "Med", "why": "ETH staking or lending protocols carry slashing or liquidation risk if conditions turn." },
+      "Chain": { "level": "Low", "why": "Base L2." },
+      "Liquidity": { "level": "Med", "why": "Large redemptions can move price; in volatile periods a queue may apply." },
+      "Strategy": { "level": "Med", "why": "Vault capital can be routed into external DeFi strategies that may underperform or become temporarily illiquid." },
+      "Bridging": { "level": "Low", "why": "Native ETH on Base; no bridge dependency for the asset itself." }
+    },
+    "yobtc": {
+      "Smart Contract": { "level": "Low", "why": "Same vault standard and audit as other yoTokens." },
+      "Protocol": { "level": "Med", "why": "Wrapped BTC and custodial/synthetic protocols add counterparty and depeg risk." },
+      "Chain": { "level": "Low", "why": "Base." },
+      "Liquidity": { "level": "Med", "why": "WBTC/renBTC liquidity and redemption delays can show up in stressed markets." },
+      "Strategy": { "level": "Med", "why": "Limited set of strategies for BTC yield; concentration and protocol risk in those venues." },
+      "Bridging": { "level": "Med", "why": "Asynchronous redemption during high volatility can mean you wait for settlement." }
+    },
+    "yoeur": {
+      "Smart Contract": { "level": "Low", "why": "Audited; same architecture as yoUSD." },
+      "Protocol": { "level": "Low", "why": "Stable yield sources with lower headline risk than volatile assets." },
+      "Chain": { "level": "Low", "why": "Base." },
+      "Liquidity": { "level": "Med", "why": "EUR stablecoin liquidity can be thinner than USD, so larger redemptions may have more impact." },
+      "Strategy": { "level": "Low", "why": "Whitelist-only strategies with conservative caps." },
+      "Bridging": { "level": "Med", "why": "Fiat rails and cross-border flows can introduce redemption delays." }
+    },
+    "yogold": {
+      "Smart Contract": { "level": "Low", "why": "Same codebase; typically smaller TVL than major yoTokens." },
+      "Protocol": { "level": "High", "why": "Commodity-backed or synthetic gold protocols are less battle-tested and can have custody or peg risk." },
+      "Chain": { "level": "Low", "why": "Base." },
+      "Liquidity": { "level": "High", "why": "Gold token liquidity is limited; redemptions can be slow or at worse prices in stress." },
+      "Strategy": { "level": "High", "why": "Fewer strategies and higher concentration; one underperforming or illiquid strategy has a bigger impact." },
+      "Bridging": { "level": "Med", "why": "Tokenized gold often involves off-chain or cross-chain settlement and timing risk." }
+    }
+  }
+}
