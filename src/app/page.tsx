@@ -8,6 +8,7 @@ import { RiskMatrix } from "@/components/RiskMatrix";
 import { ContractsTable } from "@/components/ContractsTable";
 import { ResearchInsights } from "@/components/ResearchInsights";
 import { FinalTakeaway } from "@/components/FinalTakeaway";
+import { Footer } from "@/components/Footer";
 
 import vaultsData from "../../data/vaults.json";
 import contractsData from "../../data/contracts.json";
@@ -36,6 +37,13 @@ export default function Home() {
         </aside>
         <main className="flex-1 min-w-0 px-6 pb-16 space-y-16">
           <Hero />
+          <section id="about" className="scroll-mt-6 py-6 border-b border-[var(--border)]">
+            <h2 className="text-lg font-semibold text-[var(--foreground)] mb-2">About YO</h2>
+            <p className="text-[var(--muted-foreground)] text-sm leading-relaxed max-w-2xl">
+              YO Protocol is a multi-chain yield optimizer that routes user capital across DeFi strategies using ERC4626 vaults.
+              This explorer helps you understand vault design, risk vectors and contract roles without connecting a wallet.
+            </p>
+          </section>
           <WhyThisMatters />
 
           <section id="vaults" className="scroll-mt-6">
@@ -64,6 +72,7 @@ export default function Home() {
           <ContractsTable contracts={contracts} />
           <ResearchInsights />
           <FinalTakeaway />
+          <Footer />
         </main>
       </div>
     </div>

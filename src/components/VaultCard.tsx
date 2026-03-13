@@ -7,6 +7,8 @@ export type Vault = {
   underlying: string;
   /** Short description of underlying asset exposure (e.g. "ETH yield strategies") */
   exposure: string;
+  /** Strategy exposure summary (e.g. "Stablecoin lending + liquidity strategies") */
+  strategyExposure: string;
   chain: string;
   riskLevel: "Low" | "Med" | "High";
   strategiesCount: number;
@@ -35,8 +37,11 @@ export function VaultCard({ vault }: { vault: Vault }) {
           {vault.riskLevel} risk
         </span>
       </div>
-      <p className="text-sm text-[var(--muted-foreground)] mb-3">
+      <p className="text-sm text-[var(--muted-foreground)] mb-2">
         <span className="font-medium text-[var(--card-foreground)]">Underlying asset exposure:</span> {vault.exposure}
+      </p>
+      <p className="text-sm text-[var(--muted-foreground)] mb-3">
+        <span className="font-medium text-[var(--card-foreground)]">Strategy exposure:</span> {vault.strategyExposure}
       </p>
       <dl className="space-y-2 text-sm">
         <div>

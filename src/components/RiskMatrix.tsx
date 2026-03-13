@@ -25,8 +25,8 @@ export function RiskMatrix({
     <section id="risk" className="scroll-mt-6">
       <h2 className="text-2xl font-semibold mb-2">Risk Overview</h2>
       <p className="text-[var(--muted-foreground)] text-sm mb-2">
-        Vault risks come from multiple layers including smart contracts, underlying protocols and liquidity conditions.
-        This matrix summarizes the primary risk vectors for each vault.
+        Vault risks originate from multiple layers including smart contracts, external protocols and liquidity conditions.
+        The matrix below summarizes the main risk vectors for each vault.
       </p>
       <p className="text-[var(--muted-foreground)] text-sm mb-4">
         Compare vaults across risk categories. Hover the icon for a human-readable explanation of each rating.

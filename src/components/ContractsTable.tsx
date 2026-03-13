@@ -96,9 +96,10 @@ function ContractRow({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-[var(--yo-accent)] hover:underline"
+            className="inline-flex items-center gap-1.5 text-[var(--yo-accent)] hover:underline"
           >
-            Explorer <ExternalLink className="h-3.5 w-3.5" />
+            <span aria-hidden>🔗</span>
+            View on explorer <ExternalLink className="h-3.5 w-3.5" />
           </a>
         ) : (
           <span className="text-[var(--muted-foreground)]">—</span>

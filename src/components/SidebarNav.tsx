@@ -2,6 +2,7 @@
 
 const links = [
   { href: "#hero", label: "Hero" },
+  { href: "#about", label: "About YO" },
   { href: "#why", label: "Why this matters" },
   { href: "#vaults", label: "Vault Overview" },
   { href: "#how-it-works", label: "How YO works" },
