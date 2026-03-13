@@ -3,6 +3,7 @@ import { SidebarNav } from "@/components/SidebarNav";
 import { Hero } from "@/components/Hero";
 import { WhyThisMatters } from "@/components/WhyThisMatters";
 import { VaultCard, type Vault } from "@/components/VaultCard";
+import { YoUsdWidget } from "@/components/YoUsdWidget";
 import { ProtocolFlow } from "@/components/ProtocolFlow";
 import { RiskMatrix } from "@/components/RiskMatrix";
 import { ContractsTable } from "@/components/ContractsTable";
@@ -45,6 +46,14 @@ export default function Home() {
             </p>
           </section>
           <WhyThisMatters />
+
+          <section id="demo" className="scroll-mt-6">
+            <h2 className="text-2xl font-semibold mb-2">Interactive Vault Demo</h2>
+            <p className="text-[var(--muted-foreground)] text-sm mb-6">
+              Try a live YO vault: connect your wallet, approve USDC, deposit into yoUSD on Base, or redeem. All transactions are real onchain.
+            </p>
+            <YoUsdWidget />
+          </section>
 
           <section id="vaults" className="scroll-mt-6">
             <h2 className="text-2xl font-semibold mb-2">Vault Overview</h2>

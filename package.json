@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.21",
+    "@yo-protocol/core": "^1.0.9",
+    "@yo-protocol/react": "^1.0.6",
     "clsx": "^2.1.1",
+    "connectkit": "^1.9.1",
     "lucide-react": "^0.577.0",
     "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "viem": "^2.47.2",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@types/node": "^20",
